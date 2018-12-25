@@ -21,7 +21,7 @@
 
 // param[1] - COM-port
 // param[2] - keyboard-events
-param_init(char* param[], int argc, char* argv[]) {
+void param_init(char* param[], int argc, char* argv[]) {
   static char param_buf[BUF_SIZE];
 // Environment var for (semicolon-or-space)-separated parameters
   char* ename = "TTY2KEYB";
