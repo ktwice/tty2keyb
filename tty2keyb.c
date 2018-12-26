@@ -4,7 +4,7 @@
  The program reads the COM-port and "types" the digits on the keyboard.
  The program can accept two parameters-filenames (COM-port and keyboard-events)
  from command line (space-separated) or from environment variable TTY2KEYB
- (semicolon-or-space)-separated.
+ (colon-or-space)-separated.
  */
 
 #include <stdio.h>
@@ -23,7 +23,7 @@
 // param[2] - keyboard-events
 void param_init(char* param[], int argc, char* argv[]) {
   static char param_buf[BUF_SIZE];
-// Environment var for (semicolon-or-space)-separated parameters
+// Environment var for (colon-or-space)-separated parameters
   char* ename = "TTY2KEYB";
 // parameters default values
   char* def_param[] ={NULL, "/dev/ttyS0", "/dev/input/event2"};
